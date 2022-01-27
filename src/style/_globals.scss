@@ -1,0 +1,120 @@
+.btn {
+  font-size: 1.3rem;
+  font-weight: $fw-bold;
+  padding: 1.4rem 3.2rem;
+  border-radius: 3.2rem;
+  background: $color-bright-red;
+  color: $color-very-light-gray;
+  transition: all 0.4s ease;
+  text-transform: capitalize;
+  box-shadow: 0rem 0.2rem 0.3rem 0.2rem rgba(242, 95, 58, 0.6);
+  &--secondary {
+    background-color: $color-very-light-gray;
+    color: $color-bright-red;
+  }
+  &--sm {
+    padding: 1.4rem 2.4rem;
+  }
+  &--no-shadow{
+    box-shadow: none;
+  }
+  &:hover {
+    filter: brightness(1.4);
+  }
+}
+
+.input-text {
+  max-width: 20rem;
+  font-size: 1.3rem;
+  font-weight: $fw-bold;
+  padding: 1.4rem 3.2rem;
+  border-radius: 3.2rem;
+  background-color: $color-very-light-gray;
+  border: none;
+  &:focus {
+    outline: 3px dotted $color-bright-red;
+  }
+  @media (min-width: $md-screen) {
+    padding: 1.4rem 1.6rem;
+  }
+}
+
+.fs-13 {
+  font-size: 1.3rem;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(11, 13, 23, 0.5));
+  z-index: 5;
+  display: none;
+  &.active {
+    display: block;
+  }
+
+  &--active {
+    overflow-y: hidden;
+    height: 100vh;
+  }
+}
+
+/* Hamburger */
+.hamburger {
+  background: none;
+  width: 3rem;
+  height: 2.4rem;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem;
+}
+.hamburger span {
+  background-color: $color-very-dark-blue;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  width: 2.5rem;
+  height: 0.4rem;
+  transition-duration: 300ms;
+}
+.hamburger span:nth-child(1) {
+  top: 0.2rem;
+  left: 0.2rem;
+}
+.hamburger span:nth-child(2) {
+  top: 0.9rem;
+  left: 0.2rem;
+  opacity: 1;
+}
+.hamburger span:nth-child(3) {
+  top: 1.6rem;
+  left: 0.2rem;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 0.9rem;
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 0.9rem;
+}
+
+//SWIPER PAGINATION
+.swiper-pagination {
+  position:absolute;
+  bottom: 0;
+  left:50%;
+  & > .swiper-pagination-bullet {
+    opacity: 1;
+    border: $color-bright-red solid 1px;
+    background-color: transparent;
+  }
+  & > .swiper-pagination-bullet-active {
+    background-color: $color-bright-red;
+  }
+}

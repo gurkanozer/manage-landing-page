@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Be Vietnam';
+    src: url('./font/BeVietnam-Medium.woff2') format('woff2'),
+        url('./font/BeVietnam-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam';
+    src: url('./font/BeVietnam-Light.woff2') format('woff2'),
+        url('./font/BeVietnam-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam';
+    src: url('./font/BeVietnam-Bold.woff2') format('woff2'),
+        url('./font/BeVietnam-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam';
+    src: url('./font/BeVietnam-Bold.woff2') format('woff2'),
+        url('./font/BeVietnam-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam';
+    src: url('./font/BeVietnam-Light.woff2') format('woff2'),
+        url('./font/BeVietnam-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam';
+    src: url('./font/BeVietnam-Regular.woff2') format('woff2'),
+        url('./font/BeVietnam-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam';
+    src: url('./font/BeVietnam-Medium.woff2') format('woff2'),
+        url('./font/BeVietnam-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam';
+    src: url('./font/BeVietnam-Regular.woff2') format('woff2'),
+        url('./font/BeVietnam-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@import './variables';
+@import './base';
+@import './globals';
+
+@import './sections/intro';
+@import './sections/about';
+@import './sections/testimonials';
+@import './sections/getStarted';
+@import './sections/footer';
+@import './sections/header';

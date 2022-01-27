@@ -1,0 +1,50 @@
+.get-started{
+    width:100%;
+    padding:9.6rem 3.2rem;
+    text-align: center;
+    background-color: $color-bright-red;
+    position: relative;
+    z-index: 0;
+    &::after{
+        position: absolute;
+        top:0;
+        left:0;
+        content:'';
+        background: url('../../images/bg-simplify-section-mobile.svg') no-repeat;
+        background-size:24%;
+        background-position:center left;
+        width:100%;
+        height:100%;
+        z-index: -1;
+    }
+    &__container{
+        max-width:$max-width;
+        margin:0 auto;
+    }
+    &__title{
+        color:$color-very-light-gray;
+        margin-bottom:2.4rem;
+    }
+}
+@media screen and(min-width:$md-screen){
+    .get-started{
+        padding:6rem 0;
+        &::after{
+            background: url('../../images/bg-simplify-section-desktop.svg') no-repeat;
+            background-size:100%;
+            background-position:center left;         
+        }
+        &__container{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 1.6rem;
+        }
+        &__title{
+            max-width: 46rem;
+            font-size:4rem;
+            line-height: 4.4rem;
+            text-align: left;
+        }
+    }
+}
