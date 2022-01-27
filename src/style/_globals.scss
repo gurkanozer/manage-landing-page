@@ -118,3 +118,22 @@
     background-color: $color-bright-red;
   }
 }
+
+//KEYFRAMES
+
+@keyframes NavbarInAnim {
+    0%{
+        top:-10rem;
+    }
+    100%{
+        top:0;
+    }
+}
+@keyframes NavbarOutAnim {
+    0%{
+        top:0;
+    }
+    100%{
+        top: -10rem;
+    }
+}

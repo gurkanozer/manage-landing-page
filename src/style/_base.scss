@@ -55,6 +55,34 @@ main{
     max-width:$xl-screen;
     margin:0 auto;
     position: relative;
+    overflow-x: hidden;
+    &::before{
+        position: absolute;
+        content:'';
+        background: url("../../images/bg-tablet-pattern.svg");
+        background-repeat: no-repeat;
+        background-position: -70% -16%;
+        background-size: 126%;
+        top:0;
+        right:0;
+        width:100%;
+        height:50%;
+        z-index: -1;
+    }
+    
+    &::after{
+        position: absolute;
+        content:'';
+        background: url("../../images/bg-tablet-pattern.svg");
+        background-repeat: no-repeat;
+        background-position: 0 -8%;
+        background-size: 100%;
+        top:20%;
+        left:60%;
+        width:100%;
+        height:50%;
+        z-index: -1;
+    }
 
 }
 @media screen and(min-width:$md-screen){
@@ -71,29 +99,19 @@ main{
     }
     main{
         &::before{
-            position: absolute;
-            content:'';
-            background: url("../../images/bg-tablet-pattern.svg");
             background-repeat: no-repeat;
-            background-position: 140% 0;
+            background-position: 135% 0;
+            background-size: auto;
             top:-10%;
             right:0;
-            width:100%;
-            height:50%;
-            z-index: -1;
         }
         
         &::after{
-            position: absolute;
-            content:'';
-            background: url("../../images/bg-tablet-pattern.svg");
             background-repeat: no-repeat;
             background-position: -80% 0;
+            background-size: auto;
             top:50%;
             left:0;
-            width:100%;
-            height:50%;
-            z-index: -1;
         }
     }
 }

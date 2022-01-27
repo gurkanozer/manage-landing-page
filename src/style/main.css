@@ -130,6 +130,35 @@ main {
   max-width: 144rem;
   margin: 0 auto;
   position: relative;
+  overflow-x: hidden;
+}
+
+main::before {
+  position: absolute;
+  content: '';
+  background: url("../../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: -70% -16%;
+  background-size: 126%;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+}
+
+main::after {
+  position: absolute;
+  content: '';
+  background: url("../../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -8%;
+  background-size: 100%;
+  top: 20%;
+  left: 60%;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
@@ -145,28 +174,18 @@ main {
     font-size: 1.6rem;
   }
   main::before {
-    position: absolute;
-    content: '';
-    background: url("../../images/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
-    background-position: 140% 0;
+    background-position: 135% 0;
+    background-size: auto;
     top: -10%;
     right: 0;
-    width: 100%;
-    height: 50%;
-    z-index: -1;
   }
   main::after {
-    position: absolute;
-    content: '';
-    background: url("../../images/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-position: -80% 0;
+    background-size: auto;
     top: 50%;
     left: 0;
-    width: 100%;
-    height: 50%;
-    z-index: -1;
   }
 }
 
@@ -318,6 +337,42 @@ main {
   background-color: #f25f3a;
 }
 
+@-webkit-keyframes NavbarInAnim {
+  0% {
+    top: -10rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes NavbarInAnim {
+  0% {
+    top: -10rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes NavbarOutAnim {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -10rem;
+  }
+}
+
+@keyframes NavbarOutAnim {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -10rem;
+  }
+}
+
 .intro {
   width: 100%;
   max-width: 113.6rem;
@@ -337,6 +392,7 @@ main {
 
 .intro__paragraph {
   margin-bottom: 3.2rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -583,6 +639,7 @@ main {
   background-color: #f25f3a;
   position: relative;
   z-index: 0;
+  overflow: hidden;
 }
 
 .get-started::after {
@@ -614,8 +671,10 @@ main {
   }
   .get-started::after {
     background: url("../../images/bg-simplify-section-desktop.svg") no-repeat;
-    background-size: 100%;
-    background-position: center left;
+    background-position: bottom left;
+    top: 0;
+    left: 0;
+    background-size: 120%;
   }
   .get-started__container {
     display: -webkit-box;
@@ -634,6 +693,14 @@ main {
     font-size: 4rem;
     line-height: 4.4rem;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .get-started::after {
+    background: url("../../images/bg-simplify-section-desktop.svg") no-repeat;
+    left: 16%;
+    background-size: 100%;
   }
 }
 
@@ -819,7 +886,7 @@ main {
   top: 4.4rem;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header.scrolled {
@@ -830,8 +897,8 @@ main {
   z-index: 10;
   -webkit-box-shadow: 0rem 0rem 0.4rem 0rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 0rem 0.4rem 0rem rgba(0, 0, 0, 0.2);
-  -webkit-animation: dropAnim .3s ease-in-out;
-          animation: dropAnim .3s ease-in-out;
+  -webkit-animation: NavbarInAnim .6s ease-in-out;
+          animation: NavbarInAnim .6s ease-in-out;
 }
 
 .header__container {
@@ -950,24 +1017,6 @@ main {
   }
   .header__nav-link:hover {
     color: #9095a7;
-  }
-}
-
-@-webkit-keyframes dropAnim {
-  0% {
-    top: -10rem;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes dropAnim {
-  0% {
-    top: -10rem;
-  }
-  100% {
-    top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

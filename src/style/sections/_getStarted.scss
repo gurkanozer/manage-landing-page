@@ -5,6 +5,7 @@
     background-color: $color-bright-red;
     position: relative;
     z-index: 0;
+    overflow: hidden;
     &::after{
         position: absolute;
         top:0;
@@ -31,8 +32,10 @@
         padding:6rem 0;
         &::after{
             background: url('../../images/bg-simplify-section-desktop.svg') no-repeat;
-            background-size:100%;
-            background-position:center left;         
+            background-position:bottom left;
+            top:0;
+            left:0;
+            background-size:120%;
         }
         &__container{
             display:flex;
@@ -45,6 +48,15 @@
             font-size:4rem;
             line-height: 4.4rem;
             text-align: left;
+        }
+    }
+}
+@media screen and(min-width:$lg-screen){
+    .get-started{
+        &::after{
+            background: url('../../images/bg-simplify-section-desktop.svg') no-repeat;
+            left:16%;
+            background-size:100%;
         }
     }
 }

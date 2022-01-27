@@ -33,10 +33,13 @@ overlay.addEventListener('click',()=>{
 // Scroll Event
 document.addEventListener("scroll",()=>{
   let scrollPos = window.scrollY;
-  if(scrollPos > 180)
+  if(scrollPos > 160){
       header.classList.add("scrolled");
-  else header.classList.remove("scrolled");
-  });
+      }
+  else{
+      header.classList.remove("scrolled");
+    }    
+});
 
 //Window Resize
 

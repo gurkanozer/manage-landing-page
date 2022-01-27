@@ -3,7 +3,7 @@
     top:4.4rem;
     left:0;
     width: 100%;
-    z-index:1;
+    z-index:10;
     &.scrolled{
         position: fixed;
         background-color: #fff;
@@ -11,7 +11,7 @@
         padding:1.6rem 0;
         z-index:10;
         box-shadow: 0rem 0rem 0.4rem 0rem rgba(0,0,0, 0.2);
-        animation: dropAnim .3s ease-in-out;
+        animation: NavbarInAnim .6s ease-in-out;
     }
     &__container{
         width:100%;
@@ -106,14 +106,5 @@
                 color:$color-dark-grayish-blue;
             }
         }
-    }
-}
-
-@keyframes dropAnim {
-    0%{
-        top:-10rem;
-    }
-    100%{
-        top:0;
     }
 }
