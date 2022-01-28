@@ -223,7 +223,7 @@ main::after {
 }
 
 .input-text {
-  max-width: 20rem;
+  max-width: 100%;
   font-size: 1.3rem;
   font-weight: 700;
   padding: 1.4rem 3.2rem;
@@ -238,6 +238,7 @@ main::after {
 
 @media (min-width: 768px) {
   .input-text {
+    max-width: 20rem;
     padding: 1.4rem 1.6rem;
   }
 }
@@ -386,12 +387,16 @@ main::after {
   max-width: 46rem;
 }
 
+.intro__img {
+  margin-bottom: 1.2rem;
+}
+
 .intro__title {
   margin-bottom: 0.8rem;
 }
 
 .intro__paragraph {
-  margin-bottom: 3.2rem;
+  margin-bottom: 3rem;
   font-size: 1.6rem;
 }
 
@@ -410,7 +415,7 @@ main::after {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 21.8rem 1.6rem 0;
+    padding: 19rem 1.6rem 0;
     text-align: left;
   }
   .intro__title {
@@ -426,7 +431,7 @@ main::after {
   width: 100%;
   max-width: 113.6rem;
   margin: 0 auto;
-  margin-top: 10rem;
+  margin-top: 9.2rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,8 +449,8 @@ main::after {
 }
 
 .about__intro {
-  margin-bottom: 5rem;
-  padding: 0 2.6rem;
+  margin-bottom: 5.4rem;
+  padding: 0 3rem;
 }
 
 .about__title {
@@ -462,7 +467,7 @@ main::after {
 }
 
 .about__card:not(:last-child) {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .about__card-title {
@@ -501,13 +506,14 @@ main::after {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-top: 10.6rem;
   }
   .about__intro {
     text-align: left;
   }
   .about__title {
     width: 48rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2rem;
   }
   .about__paragraph {
     width: 36rem;
@@ -515,11 +521,14 @@ main::after {
   .about__card {
     max-width: 46rem;
   }
+  .about__card:not(:last-child) {
+    margin-bottom: 3.6rem;
+  }
   .about__card-title {
     line-height: 3.8rem;
     background-color: transparent;
     margin-left: 1.6rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 0.6rem;
     padding-left: 0;
   }
   .about__badge {
@@ -535,12 +544,12 @@ main::after {
   margin-bottom: 3.2rem;
 }
 
-.testimonials h2 {
-  margin-bottom: 9.6rem;
+.testimonials__title {
+  margin-bottom: 6rem;
 }
 
 .testimonials__card-container {
-  margin-bottom: 2.4rem;
+  margin-bottom: 9rem;
 }
 
 .testimonials__card {
@@ -576,53 +585,16 @@ main::after {
   border-radius: 50%;
 }
 
-.testimonials__switch {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 3.2rem;
-}
-
-.testimonials__switch-control {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.testimonials__switch-control.active .testimonials__switch-checkmark {
-  background-color: #f25f3a;
-}
-
-.testimonials__switch-radio {
-  opacity: 0;
-  cursor: pointer;
-}
-
-.testimonials__switch-radio:checked ~ .testimonials__switch-checkmark {
-  background-color: #f25f3a;
-}
-
-.testimonials__switch-checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0.8rem;
-  width: 0.8rem;
-  border: 0.1rem solid #f25f3a;
-  border-radius: 50%;
-}
-
 @media screen and (min-width: 768px) {
+  .testimonials {
+    margin-top: 8rem;
+  }
+  .testimonials__title {
+    margin-bottom: 8rem;
+  }
+  .testimonials__card-container {
+    margin-bottom: 2rem;
+  }
   .testimonials__card {
     min-width: 53.6rem;
     padding: 3.8rem 4.4rem;
@@ -634,7 +606,7 @@ main::after {
 
 .get-started {
   width: 100%;
-  padding: 9.6rem 3.2rem;
+  padding: 10rem 3.2rem;
   text-align: center;
   background-color: #f25f3a;
   position: relative;
@@ -662,12 +634,13 @@ main::after {
 
 .get-started__title {
   color: #fafafa;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 
 @media screen and (min-width: 768px) {
   .get-started {
-    padding: 6rem 0;
+    padding: 5.2rem 0;
+    margin-top: 18rem;
   }
   .get-started::after {
     background: url("../../images/bg-simplify-section-desktop.svg") no-repeat;
@@ -705,14 +678,14 @@ main::after {
 }
 
 .footer {
-  background: #1d1e25;
   width: 100%;
   max-width: 144rem;
   margin: 0 auto;
+  background: #1d1e25;
 }
 
 .footer__container {
-  padding: 5rem 2.4rem 2.6rem;
+  padding: 4.6rem 2.4rem 2.6rem;
   width: 100%;
   max-width: 113.6rem;
   margin: 0 auto;
@@ -734,7 +707,7 @@ main::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4.4rem;
 }
 
 .footer__subscribe .input-text {
@@ -761,7 +734,7 @@ main::after {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: socials;
-  margin-bottom: 3.6rem;
+  margin-bottom: 5.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -814,7 +787,7 @@ main::after {
 }
 
 .footer__nav-item {
-  padding: 0.8rem 0;
+  padding: 0.6rem 0;
   width: auto;
 }
 
@@ -850,7 +823,7 @@ main::after {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 5rem 1.6rem 0;
+    padding: 6rem 1.6rem 0;
   }
   .footer__nav {
     -webkit-box-pack: space-evenly;

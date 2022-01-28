@@ -2,12 +2,12 @@
     width:100%;
     padding:0 2.6rem;
     text-align: center;
-        margin-bottom: 3.2rem;
-    h2{
-        margin-bottom: 9.6rem;
+    margin-bottom: 3.2rem;
+    &__title{
+        margin-bottom: 6rem;
     }
     &__card-container{
-        margin-bottom:2.4rem;
+        margin-bottom:9rem;
     }
     &__card{
         padding:3.8rem 2.6rem;
@@ -33,47 +33,17 @@
             border-radius: 50%;
         }
     }
-    // Radio Button Start
-    &__switch{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 3.2rem;
-    }
-    &__switch-control{
-        display: block;
-        position: relative;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        &.active{
-            .testimonials__switch-checkmark{
-                background-color: $color-bright-red;
-            }
-        }
-    }
-    &__switch-radio{
-        opacity: 0;
-        cursor: pointer;
-        &:checked ~ .testimonials__switch-checkmark{
-            background-color: $color-bright-red;
-        }
-    }
-    &__switch-checkmark{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 0.8rem;
-        width: 0.8rem;
-        border:0.1rem solid $color-bright-red;
-        border-radius: 50%;
-    }
 }
 
 @media screen and (min-width:$md-screen){
     .testimonials{
+        margin-top: 8rem;
+        &__title{
+            margin-bottom: 8rem;
+        }
+        &__card-container{
+            margin-bottom: 2rem;
+        }
         &__card{
         min-width: 53.6rem;
         padding:3.8rem 4.4rem;

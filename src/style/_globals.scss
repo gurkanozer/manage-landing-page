@@ -24,7 +24,7 @@
 }
 
 .input-text {
-  max-width: 20rem;
+  max-width: 100%;
   font-size: 1.3rem;
   font-weight: $fw-bold;
   padding: 1.4rem 3.2rem;
@@ -35,6 +35,7 @@
     outline: 3px dotted $color-bright-red;
   }
   @media (min-width: $md-screen) {
+    max-width: 20rem;
     padding: 1.4rem 1.6rem;
   }
 }

@@ -1,6 +1,6 @@
 .get-started{
     width:100%;
-    padding:9.6rem 3.2rem;
+    padding:10rem 3.2rem;
     text-align: center;
     background-color: $color-bright-red;
     position: relative;
@@ -24,12 +24,13 @@
     }
     &__title{
         color:$color-very-light-gray;
-        margin-bottom:2.4rem;
+        margin-bottom:3.2rem;
     }
 }
 @media screen and(min-width:$md-screen){
     .get-started{
-        padding:6rem 0;
+        padding:5.2rem 0;
+        margin-top: 18rem;
         &::after{
             background: url('../../images/bg-simplify-section-desktop.svg') no-repeat;
             background-position:bottom left;

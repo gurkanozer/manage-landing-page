@@ -2,15 +2,15 @@
     width:100%;
     max-width:$max-width;
     margin:0 auto;
-    margin-top:10rem;
+    margin-top:9.2rem;
     text-align: center;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     &__intro{
-        margin-bottom: 5rem;
-        padding:0 2.6rem;
+        margin-bottom: 5.4rem;
+        padding:0 3rem;
     }
     &__title{
         margin-bottom: 1.6rem;
@@ -22,7 +22,7 @@
         text-align: left;
         position:relative;
         &:not(:last-child){
-            margin-bottom: 5rem;
+            margin-bottom: 4rem;
         }
     }
     &__card-title{
@@ -53,24 +53,28 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        margin-top:10.6rem;
         &__intro{
             text-align: left;
         }
         &__title{
             width: 48rem;
-            margin-bottom: 3.2rem;
+            margin-bottom:2rem;
         }
         &__paragraph{
             width:36rem;
         }
         &__card{
             max-width:46rem;
+            &:not(:last-child){
+                margin-bottom: 3.6rem;
+            }
         }
         &__card-title{
             line-height:3.8rem;
             background-color: transparent;
             margin-left: 1.6rem;
-            margin-bottom: 1.3rem;
+            margin-bottom: 0.6rem;
             padding-left:0;
         }
         &__badge{
