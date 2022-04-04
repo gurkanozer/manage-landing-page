@@ -4,7 +4,7 @@
     margin:0 auto;
     background:$color-very-dark-blue;
     &__container{
-        padding:4.6rem 2.4rem 2.6rem;
+        padding:46px 24px 26px;
         width:100%;
         max-width:$max-width;
         margin:0 auto;
@@ -16,9 +16,9 @@
         display:flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 4.4rem;
+        margin-bottom: 44px;
         .input-text{
-            margin-right:0.6rem;
+            margin-right:6px;
         }
     }
     &__nav{
@@ -26,11 +26,11 @@
         display:flex;
         align-items: flex-start;
         justify-content: space-between;
-        margin-bottom: 3.6rem;
+        margin-bottom: 36px;
     }
     &__socials{
         grid-area:socials;
-        margin-bottom: 5.5rem;
+        margin-bottom: 55px;
         display:flex;
         align-items: center;
         justify-content: center;
@@ -39,19 +39,19 @@
         grid-area:brand;
         display:flex;
         justify-content: center;
-        margin-bottom: 3.6rem;
+        margin-bottom: 36px;
         &-img{
             width:auto;
-            height:2.4rem;
+            height:24px;
         }
     }
     &__copy{
         text-align: center;
         color:$color-dark-grayish-blue;
-        font-size:1.3rem;
+        font-size:13px;
     }
     &__nav--rows{
-        padding:0 3.6rem;
+        padding:0 36px;
     }
     &__nav--columns{
         display:flex;
@@ -59,18 +59,18 @@
         justify-content: center;
     }
     &__nav-item{
-        padding:0.6rem 0;
+        padding:6px 0;
         width:auto;
         &:not(:last-child){
-            padding-right:3.2rem;
+            padding-right:32px;
         }
     }
     &__nav-link{
         color:$color-very-light-gray;
-        font-size:1.3rem;
+        font-size:13px;
         transition: all .4s ease;
         i{
-            font-size:3rem;
+            font-size:30px;
             &:hover{
                 transform: scale(1.2) rotate(-10deg);
             }
@@ -87,7 +87,7 @@
             grid-template-areas:"brand nav subscribe" "socials nav copy";
             grid-template-columns: 1fr 3fr 2fr;
             justify-content: space-between;
-            padding:6rem 1.6rem 0;
+            padding:60px 16px 0;
         }
         &__nav{
             justify-content: space-evenly;
@@ -99,14 +99,14 @@
             justify-content: right;
         }
         &__nav-item{
-            padding:0.8rem 0;
+            padding:8px 0;
             &:not(:last-child){
-                padding-right:1.2rem;
+                padding-right:12px;
             }
         }
         &__nav-link{
             i{
-                font-size:2.4rem;
+                font-size:24px;
             }
         }
         &__copy{

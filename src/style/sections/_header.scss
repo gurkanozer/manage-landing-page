@@ -1,6 +1,6 @@
 .header{
     position: absolute;
-    top:4.4rem;
+    top:44px;
     left:0;
     width: 100%;
     z-index:10;
@@ -8,7 +8,7 @@
         position: fixed;
         background-color: #fff;
         top:0;
-        padding:1.6rem 0;
+        padding:16px 0;
         z-index:10;
         box-shadow: 0rem 0rem 0.4rem 0rem rgba(0,0,0, 0.2);
         animation: NavbarInAnim .6s ease-in-out;
@@ -20,13 +20,13 @@
         display:flex;
         align-items: center;
         justify-content: space-between;
-        padding:0 1.6rem;
+        padding:0 16px;
     }
     &__brand{
         z-index: 10;
         &-img{
             width:auto;
-            height:1.8rem;
+            height:18px;
         }
     }
     &__toggle-btn{
@@ -35,13 +35,13 @@
     }
     &__nav{
         position:absolute;
-        top:7rem;
+        top:70px;
         left:-100%;
-        width:calc(100% - 4.8rem);
-        max-width:42rem;
+        width:calc(100% - 48px);
+        max-width:420px;
         z-index: 10;
         background-color: #fff;
-        border-radius: 0.6rem;
+        border-radius: 6px;
         transition: all 1s ease;
         &.active{
             left:50%;
@@ -53,15 +53,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding:4rem 0;
+        padding:40px 0;
     }
     &__nav-item{
         &:not(:last-child){
-            margin-bottom: 2.4rem;
+            margin-bottom: 24px;
         }
     }
     &__nav-link{
-        font-size:1.6rem;
+        font-size:16px;
         font-weight: $fw-bold;
     }
     &__get-started-btn{
@@ -70,7 +70,7 @@
 }
 @media screen and(min-width:$md-screen){
     .header{
-        top:5.6rem;
+        top:56px;
         &__toggle-btn{
             display:none;
         }
@@ -79,7 +79,7 @@
         }
         &__brand{
             &-img{
-                height:2.4rem;
+                height:24px;
             }
         }
         &__nav{
@@ -94,12 +94,12 @@
         }
         &__nav-item{
             &:not(:last-child){
-                padding-right:3.2rem;
+                padding-right:32px;
                 margin-bottom: 0;
             }
         }
         &__nav-link{
-            font-size:1.4rem;
+            font-size:14px;
             font-weight: $fw-bold;
             color:$color-dark-blue;
             &:hover{

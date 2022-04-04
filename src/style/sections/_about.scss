@@ -2,49 +2,49 @@
     width:100%;
     max-width:$max-width;
     margin:0 auto;
-    margin-top:9.2rem;
+    margin-top:92px;
     text-align: center;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     &__intro{
-        margin-bottom: 5.4rem;
-        padding:0 3rem;
+        margin-bottom: 54px;
+        padding:0 30px;
     }
     &__title{
-        margin-bottom: 1.6rem;
+        margin-bottom: 16px;
     }
     &__card-container{
-        margin-bottom: 6.4rem;
+        margin-bottom: 64px;
     }
     &__card{
         text-align: left;
         position:relative;
         &:not(:last-child){
-            margin-bottom: 4rem;
+            margin-bottom: 40px;
         }
     }
     &__card-title{
-        line-height:3.8rem;
+        line-height:38px;
         background-color: $color-pale-red;
-        margin-left: 2.6rem;
-        margin-bottom: 1.3rem;
-        padding-left:7.2rem;
+        margin-left: 26px;
+        margin-bottom: 13px;
+        padding-left:72px;
     }
     &__card-paragraph{
-        padding:0 1.6rem;
+        padding:0 16px;
     }
     &__badge{
         background-color: $color-bright-red;
         color:$color-very-light-gray;
         display: inline-block;
-        line-height: 3.8rem;
-        padding:0 2.4rem;
-        border-radius: 3.2rem;
+        line-height: 38px;
+        padding:0 24px;
+        border-radius: 32px;
         position:absolute;
         top:0;
-        left:1.6rem;
+        left:16px;
     }
 }
 
@@ -53,33 +53,33 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        margin-top:10.6rem;
+        margin-top:106px;
         &__intro{
             text-align: left;
         }
         &__title{
-            width: 48rem;
-            margin-bottom:2rem;
+            width: 480px;
+            margin-bottom:20px;
         }
         &__paragraph{
-            width:36rem;
+            width:360px;
         }
         &__card{
-            max-width:46rem;
+            max-width:460px;
             &:not(:last-child){
-                margin-bottom: 3.6rem;
+                margin-bottom: 36px;
             }
         }
         &__card-title{
-            line-height:3.8rem;
+            line-height:38px;
             background-color: transparent;
-            margin-left: 1.6rem;
-            margin-bottom: 0.6rem;
+            margin-left: 16px;
+            margin-bottom: 6px;
             padding-left:0;
         }
         &__badge{
             top:0;
-            left:-7.2rem;
+            left:-72px;
         }
     }
 }
